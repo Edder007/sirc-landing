@@ -6,6 +6,29 @@
     <title>SIRC | Gestión para Ingeniería y Construcción</title>
     <meta name="description" content="SIRC ayuda a las empresas de ingeniería y construcción a organizar proyectos, recursos, costos y reportes.">
     <link rel="icon" type="image/png" href="icono-sirc.png">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S07TDV3L0K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-S07TDV3L0K');
+
+        // Registra los clics que llevan al archivo de descarga de SIRC.
+        document.addEventListener('click', function (event) {
+            const link = event.target.closest('a');
+
+            if (link && link.href.includes('drive.google.com')) {
+                gtag('event', 'file_download', {
+                    file_name: 'SIRC',
+                    file_type: 'software',
+                    download_location: 'website'
+                });
+            }
+        });
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
