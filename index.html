@@ -3,139 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIRC | Ingeniería y Construcción | Todo el control de tu negocio</title>
-    
-    <!-- Meta etiquetas para SEO básicas -->
-    <meta name="description" content="Software de gestión integral para empresas de ingeniería y construcción. Centraliza, ahorra tiempo y toma mejores decisiones con SIRC.">
-    
-    <!-- Favicon (Tu icono recortado) -->
+
+    <title>SIRC | Ingeniería y Construcción</title>
+
+    <meta name="description"
+          content="SIRC, software de gestión para empresas de ingeniería y construcción. Descarga SIRC y centraliza tus proyectos, recursos y costos.">
+
     <link rel="icon" type="image/png" href="icono-sirc.png">
 
-    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'azul-oscuro': '#0b1120', // Un tono muy oscuro, casi negro, como el fondo de tu logo
-                        'cian-sirc': '#06b6d4',   // El cian brillante de tu logo
-                        'gris-sirc': '#94a3b8',   // El gris de tu logo
+                        'azul-oscuro': '#0b1120',
+                        'cian-sirc': '#06b6d4',
+                        'gris-sirc': '#94a3b8'
                     },
                     fontFamily: {
-                        'sans': ['Inter', 'system-ui', 'sans-serif'], // Fuente moderna y limpia
+                        sans: ['Inter', 'system-ui', 'sans-serif']
                     }
                 }
             }
-        }
+        };
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+          rel="stylesheet">
 </head>
+
 <body class="font-sans antialiased text-gris-sirc bg-azul-oscuro">
 
-    <!-- 1. Barra de Navegación (Navbar) - Fondo oscuro para que resalte el logo -->
+    <!-- Barra de navegación -->
     <header class="bg-azul-oscuro/95 backdrop-blur-sm shadow-md sticky top-0 z-50 border-b border-gray-800">
         <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-            <div class="flex items-center">
-                <!-- Logo Horizontal Insertado -->
-                <img src="logo-sirc.png" alt="SIRC Ingeniería y construcción" class="h-10 w-auto">
-            </div>
-            <div class="flex items-center space-x-6">
-                <a href="#beneficios" class="text-gray-300 hover:text-cian-sirc transition duration-150 font-medium">Beneficios</a>
-                <!-- Botón CTA Navbar (Estilo Logo) -->
-                <a href="#contacto" class="bg-cian-sirc text-azul-oscuro px-6 py-2.5 rounded-full font-bold hover:bg-cyan-500 transition duration-200 transform hover:scale-105 text-sm shadow-lg">
-                    Solicitar Demo
+
+            <img src="logo-sirc.png"
+                 alt="SIRC Ingeniería y Construcción"
+                 class="h-10 w-auto">
+
+            <div class="flex items-center gap-4">
+                <a href="#beneficios"
+                   class="text-gray-300 hover:text-cian-sirc transition font-medium">
+                    Beneficios
+                </a>
+
+                <a href="https://drive.google.com/uc?export=download&id=1uyHscogGAaeVLngGHKczFjQ0-89sZ-wo"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="bg-cian-sirc text-azul-oscuro px-6 py-2.5 rounded-full font-bold hover:bg-cyan-500 transition transform hover:scale-105 text-sm shadow-lg">
+                    Descargar SIRC
                 </a>
             </div>
         </nav>
     </header>
 
-    <!-- 2. Sección Principal (Hero) - Adaptada a la estética del logo -->
-    <section class="max-w-7xl mx-auto px-6 py-20 md:py-32 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-            Todo el control de tu negocio, <br class="hidden md:inline">
-            <span class="text-cian-sirc">en un solo lugar.</span>
-        </h1>
-        <p class="text-2xl text-gray-300 mb-16 max-w-3xl mx-auto font-light">
-            Simplifica la gestión de tu empresa de ingeniería con SIRC. Toma mejores decisiones basadas en datos reales y potencia tu crecimiento.
-        </p>
-        <!-- Botón CTA Hero -->
-        <a href="#contacto" class="bg-cian-sirc text-azul-oscuro px-12 py-5 rounded-full font-extrabold text-xl shadow-2xl shadow-cian-500/20 hover:bg-cyan-500 transition duration-200 inline-block transform hover:scale-105">
-            Solicitar Demostración Gratuita
-        </a>
-    </section>
+    <!-- Sección principal -->
+    <main>
+        <section class="max-w-7xl mx-auto px-6 py-20 md:py-32 text-center">
 
-    <!-- Sección de Imagen/Mockup - Con el icono grande como placeholder -->
-    <section class="bg-white py-20 rounded-t-3xl shadow-inner">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <p class="text-sm uppercase text-gray-400 tracking-widest mb-4">Interfaz de SIRC</p>
-            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-xl aspect-video flex items-center justify-center text-gray-400">
-                <!-- Tu icono grande centrado -->
-                <img src="icono-sirc.png" alt="SIRC Icono" class="h-40 w-auto opacity-90">
-            </div>
-            <p class="mt-6 text-gray-500 italic">Optimizado para ingeniería y construcción.</p>
-        </div>
-    </section>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+                Todo el control de tu negocio,
+                <br class="hidden md:inline">
+                <span class="text-cian-sirc">en un solo lugar.</span>
+            </h1>
 
-    <!-- 3. Sección de Beneficios -->
-    <section id="beneficios" class="max-w-7xl mx-auto px-6 py-24 bg-white text-gray-800">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-center text-azul-oscuro mb-20 tracking-tight">¿Por qué elegir <span class="text-cian-sirc">SIRC</span>?</h2>
-        
-        <div class="grid md:grid-cols-3 gap-12">
-            <!-- Beneficio 1 -->
-            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-2xl transition hover:-translate-y-2 duration-300">
-                <div class="w-16 h-16 bg-cian-sirc/10 rounded-2xl flex items-center justify-center mb-8 border border-cian-sirc/20">
-                    <svg class="w-9 h-9 text-cian-sirc" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-                </div>
-                <h3 class="text-2xl font-bold text-azul-oscuro mb-4 tracking-tight">Centraliza tu información</h3>
-                <p class="text-gray-600 leading-relaxed">Olvida las hojas de cálculo dispersas y la información duplicada. Presupuestos, proyectos, recursos... Toda la operación unificada y accesible en tiempo real.</p>
-            </div>
-
-            <!-- Beneficio 2 -->
-            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-2xl transition hover:-translate-y-2 duration-300">
-                <div class="w-16 h-16 bg-cian-sirc/10 rounded-2xl flex items-center justify-center mb-8 border border-cian-sirc/20">
-                    <svg class="w-9 h-9 text-cian-sirc" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                </div>
-                <h3 class="text-2xl font-bold text-azul-oscuro mb-4 tracking-tight">Optimiza tu tiempo</h3>
-                <p class="text-gray-600 leading-relaxed">Automatiza tareas administrativas y estandariza los flujos de trabajo de tus proyectos de ingeniería. Reduce errores y finaliza tus obras más rápido.</p>
-            </div>
-
-            <!-- Beneficio 3 -->
-            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-2xl transition hover:-translate-y-2 duration-300">
-                <div class="w-16 h-16 bg-cian-sirc/10 rounded-2xl flex items-center justify-center mb-8 border border-cian-sirc/20">
-                    <svg class="w-9 h-9 text-cian-sirc" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                </div>
-                <h3 class="text-2xl font-bold text-azul-oscuro mb-4 tracking-tight">Toma decisiones inteligentes</h3>
-                <p class="text-gray-600 leading-relaxed">Obtén reportes de rentabilidad por proyecto, control de costos y desviaciones. Basado en datos reales, gestiona con seguridad y planifica el crecimiento.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Sección de Contacto/CTA Final - Fondo oscuro de nuevo -->
-    <section id="contacto" class="bg-azul-oscuro text-white py-24 rounded-t-3xl">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">¿Listo para llevar tu ingeniería <br class="hidden md:inline"> al siguiente nivel?</h2>
-            <p class="text-xl text-gray-300 mb-16 font-light opacity-90">
-                Agenda una demo personalizada y gratuita con nuestros consultores especializados en el sector. Descubre cómo SIRC se adapta a la realidad de tu constructora.
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto font-light">
+                Simplifica la gestión de tu empresa de ingeniería y construcción con SIRC.
+                Centraliza proyectos, recursos, costos y reportes en una sola plataforma.
             </p>
-            <!-- Enlace a formulario externo (Google Forms, Calendly, etc.) -->
-            <a href="https://tu-enlace-de-calendly-o-formulario.com" target="_blank" class="bg-cian-sirc text-azul-oscuro px-12 py-5 rounded-full font-extrabold text-xl shadow-2xl shadow-cian-500/20 hover:bg-cyan-500 transition duration-200 inline-block transform hover:scale-105">
-                Quiero solicitar mi Demostración
-            </a>
-            <p class="mt-6 text-sm text-gray-400">Sin compromiso de compra. Demo online.</p>
-        </div>
-    </section>
 
-    <!-- 5. Pie de página (Footer) -->
+            <a href="https://drive.google.com/uc?export=download&id=1uyHscogGAaeVLngGHKczFjQ0-89sZ-wo"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="bg-cian-sirc text-azul-oscuro px-12 py-5 rounded-full font-extrabold text-xl shadow-2xl shadow-cyan-500/20 hover:bg-cyan-500 transition inline-block transform hover:scale-105">
+                Descargar SIRC
+            </a>
+
+            <p class="mt-5 text-sm text-gray-400">
+                Descarga disponible desde Google Drive.
+            </p>
+        </section>
+
+        <!-- Imagen o icono -->
+        <section class="bg-white py-20 rounded-t-3xl shadow-inner">
+            <div class="max-w-5xl mx-auto px-6 text-center">
+
+                <p class="text-sm uppercase text-gray-400 tracking-widest mb-4">
+                    Conoce SIRC
+                </p>
+
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-xl aspect-video flex items-center justify-center">
+                    <img src="icono-sirc.png"
+                         alt="Icono de SIRC"
+                         class="h-40 w-auto opacity-90">
+                </div>
+
+                <p class="mt-6 text-gray-500 italic">
+                    Soluciones integrales para ingeniería y construcción.
+                </p>
+            </div>
+        </section>
+
+        <!-- Beneficios -->
+        <section id="beneficios"
+                 class="max-w-7xl mx-auto px-6 py-24 bg-white text-gray-800">
+
+            <h2 class="text-4xl md:text-5xl font-extrabold text-center text-azul-oscuro mb-20">
+                ¿Por qué elegir <span class="text-cian-sirc">SIRC</span>?
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-12">
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-2xl transition hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mb-8">
+                        <span class="text-3xl">📁</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-azul-oscuro mb-4">
+                        Centraliza tu información
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Administra presupuestos, proyectos, recursos y operaciones
+                        desde un solo lugar.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-2xl transition hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mb-8">
+                        <span class="text-3xl">⏱️</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-azul-oscuro mb-4">
+                        Optimiza tu tiempo
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Organiza tus procesos, reduce errores y mejora el control
+                        de tus proyectos de ingeniería.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-2xl transition hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mb-8">
+                        <span class="text-3xl">📊</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-azul-oscuro mb-4">
+                        Toma mejores decisiones
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Consulta reportes de rentabilidad, costos y desviaciones
+                        para administrar mejor cada proyecto.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Descarga -->
+        <section id="descarga" class="bg-azul-oscuro text-white py-24 rounded-t-3xl">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8">
+                    Descarga SIRC
+                </h2>
+
+                <p class="text-xl text-gray-300 mb-12 font-light">
+                    Comienza a mejorar la gestión de tus proyectos de ingeniería
+                    y construcción.
+                </p>
+
+                <a href="https://drive.google.com/uc?export=download&id=1uyHscogGAaeVLngGHKczFjQ0-89sZ-wo"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="bg-cian-sirc text-azul-oscuro px-12 py-5 rounded-full font-extrabold text-xl shadow-2xl hover:bg-cyan-500 transition inline-block transform hover:scale-105">
+                    Descargar SIRC
+                </a>
+
+                <p class="mt-6 text-sm text-gray-400">
+                    El archivo se abrirá desde Google Drive.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
     <footer class="bg-azul-oscuro text-gray-500 py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <img src="logo-sirc.png" alt="SIRC Logo" class="h-8 mx-auto mb-6 opacity-50">
-            <p>&copy; 2023 SIRC. Todos los derechos reservados.</p>
-            <p class="text-sm mt-1">Soluciones integrales para Ingeniería y Construcción.</p>
-            <div class="mt-6 text-sm space-x-6">
-                <a href="#" class="hover:text-cian-sirc">Términos de Servicio</a>
-                <a href="#" class="hover:text-cian-sirc">Política de Privacidad</a>
-            </div>
+
+            <img src="logo-sirc.png"
+                 alt="Logo SIRC"
+                 class="h-8 mx-auto mb-6 opacity-60">
+
+            <p>
+                &copy; 2026 SIRC. Todos los derechos reservados.
+            </p>
+
+            <p class="text-sm mt-1">
+                Soluciones integrales para Ingeniería y Construcción.
+            </p>
         </div>
     </footer>
 
