@@ -57,6 +57,7 @@
                 <a href="#vistas" class="text-slate-300 hover:text-cian-sirc transition">Vistas</a>
                 <a href="#funciones" class="text-slate-300 hover:text-cian-sirc transition">Funciones</a>
                 <a href="#como-funciona" class="text-slate-300 hover:text-cian-sirc transition">Cómo funciona</a>
+                <a href="#contacto" class="text-slate-300 hover:text-cian-sirc transition">Contacto</a>
                 <a href="#preguntas" class="text-slate-300 hover:text-cian-sirc transition">Preguntas frecuentes</a>
                 <a href="https://drive.google.com/uc?export=download&id=1uyHscogGAaeVLngGHKczFjQ0-89sZ-wo" target="_blank" rel="noopener noreferrer" class="bg-cian-sirc text-azul-sirc px-5 py-2.5 rounded-full font-bold hover:bg-cyan-300 transition">Descargar SIRC</a>
             </div>
@@ -138,6 +139,39 @@
             <div class="max-w-6xl mx-auto px-6 text-center"><p class="text-cian-sirc font-bold uppercase tracking-widest text-sm">Empieza fácilmente</p><h2 class="mt-3 text-4xl font-extrabold text-azul-sirc">Descarga y comienza a trabajar</h2><div class="grid md:grid-cols-3 gap-8 mt-14"><div><div class="mx-auto w-14 h-14 rounded-full bg-azul-sirc text-white flex items-center justify-center text-xl font-bold">1</div><h3 class="font-bold text-azul-sirc mt-5">Descarga SIRC</h3><p class="text-slate-600 mt-2">Obtén el archivo desde Google Drive.</p></div><div><div class="mx-auto w-14 h-14 rounded-full bg-azul-sirc text-white flex items-center justify-center text-xl font-bold">2</div><h3 class="font-bold text-azul-sirc mt-5">Instala el software</h3><p class="text-slate-600 mt-2">Sigue las instrucciones de instalación.</p></div><div><div class="mx-auto w-14 h-14 rounded-full bg-azul-sirc text-white flex items-center justify-center text-xl font-bold">3</div><h3 class="font-bold text-azul-sirc mt-5">Comienza a gestionar</h3><p class="text-slate-600 mt-2">Organiza tus proyectos con SIRC.</p></div></div></div>
         </section>
 
+        <!-- Contacto -->
+        <section id="contacto" class="py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <p class="text-cian-sirc font-bold uppercase tracking-widest text-sm">Estamos para ayudarte</p>
+                    <h2 class="mt-3 text-4xl md:text-5xl font-extrabold text-azul-sirc">Solicita información</h2>
+                    <p class="mt-5 text-lg text-slate-600">Déjanos tus datos y nos pondremos en contacto contigo.</p>
+                </div>
+
+                <form onsubmit="enviarFormulario(event)" class="bg-slate-50 border border-slate-200 rounded-3xl p-6 md:p-10 shadow-sm">
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div>
+                            <label for="nombre" class="block text-sm font-semibold text-azul-sirc mb-2">Nombre</label>
+                            <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-cian-sirc focus:ring-2 focus:ring-cyan-100">
+                        </div>
+                        <div>
+                            <label for="correo" class="block text-sm font-semibold text-azul-sirc mb-2">Correo electrónico</label>
+                            <input id="correo" name="correo" type="email" required placeholder="tu@correo.com" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-cian-sirc focus:ring-2 focus:ring-cyan-100">
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <label for="mensaje" class="block text-sm font-semibold text-azul-sirc mb-2">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required placeholder="¿En qué podemos ayudarte?" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-cian-sirc focus:ring-2 focus:ring-cyan-100"></textarea>
+                    </div>
+
+                    <button type="submit" class="mt-6 w-full md:w-auto bg-cian-sirc text-azul-sirc px-8 py-3.5 rounded-full font-extrabold hover:bg-cyan-300 transition transform hover:-translate-y-0.5">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </section>
+
         <!-- Descarga -->
         <section id="descarga" class="py-24 bg-azul-sirc text-white text-center"><div class="max-w-3xl mx-auto px-6"><img src="icono-sirc.png" alt="SIRC" class="h-20 w-auto mx-auto mb-8"><h2 class="text-4xl md:text-5xl font-extrabold">Descarga SIRC</h2><p class="text-lg text-slate-300 mt-5">Da el siguiente paso para mejorar el control de tus proyectos de ingeniería y construcción.</p><a href="https://drive.google.com/uc?export=download&id=1uyHscogGAaeVLngGHKczFjQ0-89sZ-wo" target="_blank" rel="noopener noreferrer" class="inline-block mt-9 bg-cian-sirc text-azul-sirc px-10 py-4 rounded-full font-extrabold text-lg hover:bg-cyan-300 transition transform hover:-translate-y-1">Descargar SIRC</a><p class="text-sm text-slate-400 mt-5">Archivo disponible desde Google Drive.</p></div></section>
 
@@ -146,5 +180,21 @@
     </main>
 
     <footer class="bg-azul-sirc text-slate-400 py-10 border-t border-white/10"><div class="max-w-7xl mx-auto px-6 text-center"><img src="logo-sirc.png" alt="Logo SIRC" class="h-8 w-auto mx-auto mb-5 opacity-70"><p>© 2026 SIRC. Todos los derechos reservados.</p><p class="text-sm mt-2">Soluciones integrales para Ingeniería y Construcción.</p></div></footer>
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById('nombre').value.trim();
+            const correo = document.getElementById('correo').value.trim();
+            const mensaje = document.getElementById('mensaje').value.trim();
+
+            const asunto = encodeURIComponent('Solicitud de información sobre SIRC');
+            const cuerpo = encodeURIComponent(
+                `Nombre: ${nombre}\nCorreo: ${correo}\n\nMensaje:\n${mensaje}`
+            );
+
+            window.location.href = `mailto:sirc.ing.const@gmail.com?subject=${asunto}&body=${cuerpo}`;
+        }
+    </script>
 </body>
 </html>
